@@ -6,6 +6,9 @@ public class SillyMethods {
     }
 
     public String countTo(int number) {
-        return "0 1 2 3 4 5 6 7 8 9 10";
+        StringBuilder builder = new StringBuilder("0");
+        for (int i = 1; i <= number; i++)
+            builder.append(" ").append(i);
+        return builder.toString();
     }
 }
