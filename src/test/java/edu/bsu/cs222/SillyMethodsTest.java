@@ -10,4 +10,11 @@ public class SillyMethodsTest {
         boolean result = sillyMethods.didGuess42(42);
         Assertions.assertTrue(result);
     }
+
+    @Test
+    public void testDidGuess42Incorrectly(){
+        SillyMethods sillyMethods = new SillyMethods();
+        boolean result = sillyMethods.didGuess42(17);
+        Assertions.assertFalse(result);
+    }
 }
