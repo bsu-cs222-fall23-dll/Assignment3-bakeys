@@ -17,4 +17,11 @@ public class SillyMethodsTest {
         boolean result = sillyMethods.didGuess42(17);
         Assertions.assertFalse(result);
     }
+
+    @Test
+    public void testCountTo10(){
+        SillyMethods sillyMethods = new SillyMethods();
+        String result = sillyMethods.countTo(10);
+        Assertions.assertEquals(result, "0 1 2 3 4 5 6 7 8 9 10");
+    }
 }
