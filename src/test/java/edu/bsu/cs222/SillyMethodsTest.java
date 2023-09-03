@@ -24,4 +24,11 @@ public class SillyMethodsTest {
         String result = sillyMethods.countTo(10);
         Assertions.assertEquals(result, "0 1 2 3 4 5 6 7 8 9 10");
     }
+
+    @Test
+    public void testCountTo15(){
+        SillyMethods sillyMethods = new SillyMethods();
+        String result = sillyMethods.countTo(15);
+        Assertions.assertEquals(result, "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15");
+    }
 }
